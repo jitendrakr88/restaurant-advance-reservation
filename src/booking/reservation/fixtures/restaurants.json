@@ -1,0 +1,44 @@
+[
+    {
+        "model" : "reservation.Restaurant",
+        "pk": 1,
+        "fields": {
+            "slug" : "la-kababiya-dwarka-7",
+            "name" : "La Kababiya",
+            "description" : "North Indian",
+            "tables" : "25",
+            "address": "Palam Extension, Sector 7, Dwarka",
+            "state" : "New Delhi",
+            "zipcode": "110077",
+            "country": "India"
+        }
+    },
+    {
+        "model" : "reservation.Restaurant",
+        "pk": 2,
+        "fields": {
+            "slug" : "biryani-art-dwarka-7",
+            "name" : "Biryani Art",
+            "description" : "Delicious Biryani",
+            "tables" : "19",
+            "address": "Palam Extension, Sector 7, Dwarka",
+            "state" : "New Delhi",
+            "zipcode": "110077",
+            "country": "India"
+        }
+    },
+    {
+        "model" : "reservation.Restaurant",
+        "pk": 3,
+        "fields": {
+            "slug" : "singlas-dwarka-9",
+            "name" : "Singla's",
+            "description" : "Pure veg north Indian",
+            "tables" : "17",
+            "address": "Sector 9, Dwarka",
+            "state" : "New Delhi",
+            "zipcode": "110075",
+            "country": "India"
+        }
+    }
+]

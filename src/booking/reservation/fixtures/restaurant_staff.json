@@ -1,0 +1,42 @@
+[
+    {
+        "model":"reservation.RestaurantStaff",
+        "pk":1,
+        "fields" : {
+            "username": "jitendrakr88",
+            "name": "Jitendra Kumar",
+            "phone": "1234567890",
+            "role": 1
+        }
+    },
+    {
+        "model":"reservation.RestaurantStaff",
+        "pk":1,
+        "fields" : {
+            "username": "jitendrakr88",
+            "name": "Jitendra Kumar",
+            "phone": "1234567890",
+            "role": 1
+        }
+    },
+    {
+        "model":"reservation.RestaurantStaff",
+        "pk":1,
+        "fields" : {
+            "username": "jitendrakr88",
+            "name": "Jitendra Kumar",
+            "phone": "1234567890",
+            "role": 1
+        }
+    },
+    {
+        "model":"reservation.RestaurantStaff",
+        "pk":1,
+        "fields" : {
+            "username": "jitendrakr88",
+            "name": "Jitendra Kumar",
+            "phone": "1234567890",
+            "role": 1
+        }
+    }
+]
