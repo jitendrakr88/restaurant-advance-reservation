@@ -30,3 +30,15 @@ class Table(models.Model):
     ocupied = models.BooleanField(default=False)
     restaurant = models.ForeignKey("Restaurant", on_delete=models.CASCADE)
 
+class Reservation(models.Model):
+    """Manage all the reservations"""
+
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    starts = models.DateTimeField()
+    ends = models.DateTimeField()
+    number_of_people = models.PositiveIntegerField()
+
+class ReservedTable(models.Model):
+    """records for reseved tables"""
+    reservation = models.ForeignKey(Reservation, on_delete=models.CASCADE)
+    table = models.ForeignKey(Table, on_delete=models.CASCADE)
