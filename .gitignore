@@ -1,0 +1,8 @@
+
+/**/.pyc
+/**/.orig
+lib/
+bin/
+include/
+/**/__pycache__/
+/**/db.sqlite3
