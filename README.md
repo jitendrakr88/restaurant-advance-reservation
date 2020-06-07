@@ -1,4 +1,4 @@
-# restaurant-advance-reservation
+# Restaurant Advance booking
 A django prototype for restaurant advance reservation system.
 
 * Install python3, virtualenv
