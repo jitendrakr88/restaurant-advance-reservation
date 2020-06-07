@@ -27,7 +27,7 @@ class RestaurantStaff(models.Model):
         (OWNER_MANAGER, _("Owner as well as Manager of the restaurant")),
         (STAFF_RECEPTION, _("Staff worker as well as receptionist at the restaurant"))
     )
-    username = models.SlugField(max_length=25, unique=True)
+    username = models.SlugField(max_length=25)
     name = models.CharField(max_length=255)
     email = models.EmailField(max_length=255, blank=True)
     phone = models.CharField(max_length=15)
@@ -36,7 +36,7 @@ class RestaurantStaff(models.Model):
 
     def __str__(self):
         role = RestaurantStaff.get_role_name(self.role)
-        return f'{self.name}, {role} at {self.restaurant.name}'
+        return f'{self.name}, {role}, {self.restaurant.name}'
 
     @staticmethod
     def get_role_name(role_type):
