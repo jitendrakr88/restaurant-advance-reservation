@@ -1,8 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
 # Create your models here.
 
-class User(models.Model):
+class Guest(models.Model):
     """
     """
     name = models.CharField(max_length=255)
@@ -54,7 +53,7 @@ class Table(models.Model):
 
 class Reservation(models.Model):
     """Manage all the reservations"""
-    person = models.ForeignKey(User, on_delete=models.CASCADE)
+    person = models.ForeignKey(Guest, on_delete=models.CASCADE)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
     starts = models.DateTimeField()
     ends = models.DateTimeField()
